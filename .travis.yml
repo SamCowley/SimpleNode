@@ -7,7 +7,7 @@ services:
 
 script:
   - docker --version
-  - docker built -t simple-node .
+  - docker build -t simple-node .
   - docker tag simple-node samcowley/simple-node:latest
 
 after_success:
